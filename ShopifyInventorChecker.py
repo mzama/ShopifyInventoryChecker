@@ -98,7 +98,7 @@ Subject: %s
             server.starttls(context=context)
             server.login(from_email, app_password)                 
             server.sendmail(from_email, to_email, message)
-            print("Sent the following email from %s to %s: \n%s" % (from_email, to_email, message))
+            print("Notice: Sent the following email from %s to %s: \n%s" % (from_email, to_email, message))
     except:
-        print("Error: An error occurred sending the email. Will try again next cycle.")
+        print("Error: An error occurred sending the email. Will try again next cycle in #{3600}.")
         continue
